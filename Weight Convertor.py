@@ -9,11 +9,11 @@
 #Function
 def convert(weight, x):
     if x == "l":
-        weight *= 2.20462262185
+        weight *= 2.2
         weight = str(weight)
         print("Weight in Lbs: " + weight)
     elif x == "k":
-        weight /= 2.20462262185
+        weight /= 2.2
         weight = str(weight)
         print("Weight in Kgs: " + weight)
     else:
@@ -22,6 +22,6 @@ def convert(weight, x):
         convert(weight, x)
 
 #Program
-weight = int(input("Weight: "))
-x = (input("COnvert to (k)gs or (L)bs? ")).lower()
+weight = float(input("Weight: "))
+x = (input("Convert to (k)gs or (L)bs? ")).lower()
 convert(weight, x)
