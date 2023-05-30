@@ -19,8 +19,7 @@ def convert(weight, to_unit):
         weight = str(weight)
         print("Weight in Kgs: " + weight)
     else:
-        weight = int(input("Weight: "))
-        to_unit = (input("Convert to (k)gs or (L)bs? ")).lower()
+        to_unit = (input("Please input what you wish to convert to; (k)gs or (L)bs? ")).lower()
         convert(weight, to_unit)
 
 #Program
