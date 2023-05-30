@@ -1,5 +1,5 @@
 # What does it do?
->This is a Python script which allows the user to convert Kg to Lbs and vice versa.
+>This is a Python program which allows the user to convert Kg to Lbs and vice versa.
 ## Personal Info
 ---
 Some Links:
