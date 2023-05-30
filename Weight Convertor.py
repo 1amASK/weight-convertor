@@ -8,21 +8,21 @@ Prompt:
         3. Gives the correct conversion.
 """
 
-#Function
+#Function Creation
 def convert(weight, to_unit):
-    if to_unit == "l":
+    if to_unit != "k" and to_unit != "l": #stamps out the edge case of neither 'k' nor 'l' being inputted by the user
+        to_unit = (input("Please input what you wish to convert to; (k)gs or (L)bs? ")).lower()
+        convert(weight, to_unit)
+    elif to_unit == "l": #runs to convert to lbs
         weight *= 2.2
         weight = str(weight)
         print("Weight in Lbs: " + weight)
-    elif to_unit == "k":
+    else: #runs to convert to kgs
         weight /= 2.2
         weight = str(weight)
         print("Weight in Kgs: " + weight)
-    else:
-        to_unit = (input("Please input what you wish to convert to; (k)gs or (L)bs? ")).lower()
-        convert(weight, to_unit)
 
-#Program
+#Program Creation
 weight = float(input("Weight: "))
 to_unit = (input("Convert to (k)gs or (L)bs? ")).lower()
 convert(weight, to_unit)
